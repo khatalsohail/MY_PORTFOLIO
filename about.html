@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — Sohail K</title>
+    <style>
+        :root {
+            --bg-body: #f4f4f4;
+            --bg-main: #fff;
+            --text-color: #111;
+            --header-bg: #000;
+            --header-text: #fff;
+            --nav-link: #111;
+            --bar-bg: #ddd;
+            --bar-fill: #000;
+            --card-bg: #fafafa;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-body: #1a1a1a;
+                --bg-main: #2d2d2d;
+                --text-color: #f4f4f4;
+                --header-bg: #000;
+                --header-text: #fff;
+                --nav-link: #f4f4f4;
+                --bar-bg: #444;
+                --bar-fill: #fff;
+                --card-bg: #333;
+            }
+        }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: var(--bg-body);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        header {
+            background: var(--header-bg);
+            color: var(--header-text);
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        header h1 { margin: 10px 0; }
+        .profile-avatar {
+            width: 80px;
+            height: 80px;
+            background-color: var(--bg-main);
+            color: var(--text-color);
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav {
+            text-align: center;
+            margin-top: 15px;
+            position: sticky;
+            top: 0;
+            background: var(--bg-body);
+            padding: 10px 0;
+            z-index: 100;
+        }
+        nav a {
+            text-decoration: none;
+            color: var(--nav-link);
+            font-weight: bold;
+            margin: 0 10px;
+            display: inline-block;
+        }
+        nav a:hover, nav a.active { text-decoration: underline; }
+        main {
+            background: var(--bg-main);
+            padding: 30px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        section {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--bar-bg);
+        }
+        section:last-child { border-bottom: none; margin-bottom: 0; }
+        h2 { margin-top: 0; text-transform: lowercase; }
+        a { color: var(--text-color); }
+        .skill-item { margin-bottom: 15px; }
+        .skill-name {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background-color: var(--bar-bg);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .progress-fill { height: 100%; background-color: var(--bar-fill); }
+        .card {
+            background: var(--card-bg);
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .card h3 { margin: 0 0 5px 0; }
+        .card p { margin: 0 0 6px 0; font-size: 0.95em; }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 15px;
+        }
+        .grid .card { margin-bottom: 0; }
+        .btn {
+            display: inline-block;
+            background: var(--header-bg);
+            color: var(--header-text);
+            padding: 10px 18px;
+            border-radius: 3px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 5px 5px 0 0;
+        }
+        .btn:hover { opacity: 0.8; }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 400px;
+        }
+        input, textarea {
+            padding: 10px;
+            border: 1px solid var(--bar-bg);
+            border-radius: 3px;
+            background: var(--bg-body);
+            color: var(--text-color);
+            font-family: sans-serif;
+        }
+        button[type="submit"] {
+            background: var(--header-bg);
+            color: var(--header-text);
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+        button[type="submit"]:hover { opacity: 0.8; }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+        @media (max-width: 600px) {
+            nav a { display: block; margin: 10px 0; }
+            main { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="profile-avatar">
+            <img src="https://avatars.githubusercontent.com/u/319713758?v=4" alt="Profile Avatar" style="width: 100%; height: 100%; border-radius: 50%;">
+        </div>
+        <h1>About Me</h1>
+        <p>Education, skills and interests</p>
+    </header>
+
+    <nav>
+        <a href="index.html">home</a>
+        <a href="about.html" class="active">about</a>
+        <a href="projects.html">projects</a>
+        <a href="achievements.html">achievements</a>
+        <a href="contact.html">contact</a>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm Khatal Sohail (also known online as KineticX). I am deeply interested in both cybersecurity fundamentals&mdash;specifically penetration testing&mdash;and modern computing. My goal is to build robust, interactive systems while continuously challenging myself in competitive programming and hardware development using macOS.</p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="card">
+                <h3>School Education</h3>
+                <p><strong>Passed Out In 2024</strong></p>
+                <p style="margin-top: 10px;">School: Bhashyam High School.<br>Board: SSC.<br>Year: 2024</p>
+                </p>
+            </div>
+              <div class="card">
+                <h3>Pre-University</h3>
+                <p><strong>Passed Out In 2026</strong></p>
+                <p style="margin-top: 10px;">Pre-University: Modulus Junior College.<br>Board: TGBIE.<br>Year: 2024-2026</p>
+            </div>
+              <div class="card">
+                <h3>University</h3>
+                <p><strong>First-Year Student</strong> (Present)</p>
+                <p style="margin-top: 10px;">University: S-VYASA.<br>Major: CSE AI & ML.<br>Year: 2026-Present.</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skill-item">
+                <div class="skill-name"><span>HTML &amp; CSS Layouts</span><span>95%</span></div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 95%;"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name"><span>Java &amp; DSA</span><span>85%</span></div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name"><span>Python &amp; AI Fundamentals</span><span>65%</span></div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 65%;"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name"><span>Mathematics &amp; Statistics</span><span>80%</span></div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 80%;"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name"><span>ESP32 Hardware Tinkering</span><span>60%</span></div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 60%;"></div></div>
+            </div>
+        </section>
+
+        <section id="hobbies">
+            <h2>Hobbies &amp; Interests</h2>
+            <ul>
+                <li><strong>Hardware Tinkering:</strong> Experimenting with microcontrollers and custom firmware.</li>
+                <li><strong>Cybersecurity &amp; Penetration Testing:</strong> Learning about network security and ethical hacking.</li>
+                <li><strong>Reading:</strong> Exploring greek literature and philosophy while also enjoying novels from time to time.</li>
+                <li><strong>Traveling:</strong> Exploring new places & cafe hopping.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Khatal Sohail.</p>
+    </footer>
+
+</body>
+</html>
